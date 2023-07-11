@@ -1,0 +1,198 @@
+{
+  "products": [
+    {
+      "category": "burguer",
+      "items": [
+        {
+          "id": "7891234567890",
+          "name": "Burguer do Chefe",
+          "imageUrl": "https://files.menudino.com/cardapios/10045/63.jpg",
+          "price": {
+            "amount": 25.0,
+            "currency": "BRL",
+            "tax": 0.05,
+            "discount": 0.1
+          },
+          "ingredients": [
+            "Pão Australiano",
+            "150g de Blend Bovino",
+            "Queijo minas padrão maçaricado",
+            "Cebola Caramelizada",
+            "Maionese da Casa"
+          ],
+          "type": "Carne"
+        },
+        {
+          "id": "7891234567891",
+          "name": "Cheese Burguer",
+          "imageUrl": "https://files.menudino.com/cardapios/10045/60.jpg",
+          "price": {
+            "amount": 20.0,
+            "currency": "BRL",
+            "tax": 0.05,
+            "discount": 0.0
+          },
+          "ingredients": [
+            "Pão de Brioche",
+            "150g de Blend Bovino",
+            "Fatias de Cheddar",
+            "Cebola Caramelizada",
+            "Maionese da Casa"
+          ],
+          "type": "Carne"
+        },
+        {
+          "id": "7891234567892",
+          "name": "Smash Triplo Bacon",
+          "imageUrl": "https://files.menudino.com/cardapios/10045/59.jpg",
+          "price": {
+            "amount": 28.0,
+            "currency": "BRL",
+            "tax": 0.05,
+            "discount": 0.0
+          },
+          "ingredients": [
+            "Pão de Brioche",
+            "3x 80g de Blend Bovino",
+            "Farofa de Bacon",
+            "Fatias de Cheddar",
+            "Maionese da Casa"
+          ],
+          "type": "Carne"
+        },
+        {
+          "id": "7891234567893",
+          "name": "Divino Burguer",
+          "imageUrl": "https://files.menudino.com/cardapios/10045/222.jpg",
+          "price": {
+            "amount": 28.0,
+            "currency": "BRL",
+            "tax": 0.05,
+            "discount": 0.0
+          },
+          "ingredients": [
+            "Pão de Brioche",
+            "150g de Blend Bovino",
+            "Queijo mussarela empanado",
+            "Molho barbecue",
+            "Maionese da Casa"
+          ],
+          "type": "Carne"
+        }
+      ]
+    },
+    {
+      "category": "drink",
+      "items": [
+        {
+          "id": "9831536577431",
+          "name": "Coca Cola",
+          "imageUrl": "https://images.tcdn.com.br/img/img_prod/881726/coca_cola_pet_2l_277_1_20201124154653.png",
+          "price": [
+            {
+              "size": "290ml",
+              "amount": 2.0,
+              "currency": "BRL",
+              "tax": 0.05,
+              "discount": 0.0
+            },
+            {
+              "size": "350ml",
+              "amount": 4.0,
+              "currency": "BRL",
+              "tax": 0.05,
+              "discount": 0.0
+            },
+            {
+              "size": "473ml",
+              "amount": 6.0,
+              "currency": "BRL",
+              "tax": 0.05,
+              "discount": 0.0
+            },
+            {
+              "size": "1.5L",
+              "amount": 10.0,
+              "currency": "BRL",
+              "tax": 0.05,
+              "discount": 0.0
+            },
+            {
+              "size": "2L",
+              "amount": 10.0,
+              "currency": "BRL",
+              "tax": 0.05,
+              "discount": 0.0
+            }
+          ],
+          "flavors": ["Original", "Zero"]
+        },
+        {
+          "id": "9831536577432",
+          "name": "Fanta",
+          "imageUrl": "https://emporiokaminski.com.br/wp-content/uploads/2020/07/Refrigerante-Fanta-Laranja-2l.jpg",
+          "price": [
+            {
+              "size": "290ml",
+              "amount": 2.0,
+              "currency": "BRL",
+              "tax": 0.05,
+              "discount": 0.0
+            },
+            {
+              "size": "350ml",
+              "amount": 4.0,
+              "currency": "BRL",
+              "tax": 0.05,
+              "discount": 0.0
+            },
+            {
+              "size": "473ml",
+              "amount": 6.0,
+              "currency": "BRL",
+              "tax": 0.05,
+              "discount": 0.0
+            },
+            {
+              "size": "1.5L",
+              "amount": 10.0,
+              "currency": "BRL",
+              "tax": 0.05,
+              "discount": 0.0
+            },
+            {
+              "size": "2L",
+              "amount": 10.0,
+              "currency": "BRL",
+              "tax": 0.05,
+              "discount": 0.0
+            }
+          ],
+          "flavors": ["Laranja", "Uva", "Guaraná"]
+        },
+        {
+          "id": "9831536577434",
+          "name": "Suco Natural",
+          "imageUrl": "",
+          "price": [
+            {
+              "size": "300ml",
+              "amount": 5.0,
+              "currency": "BRL",
+              "tax": 0.05,
+              "discount": 0.0
+            },
+            {
+              "size": "500ml",
+              "amount": 8.0,
+              "currency": "BRL",
+              "tax": 0.05,
+              "discount": 0.0
+            }
+          ],
+          "flavors": ["Laranja", "Limão", "Abacaxi", "Maracujá", "Melancia"]
+        }
+      ]
+    }
+  ]
+}

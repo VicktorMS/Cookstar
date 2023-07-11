@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+    @apply max-w-screen-2xl w-full
+}
+
+body {
+    @apply w-full h-screen flex flex-col box-border items-center
+}
