@@ -5,7 +5,7 @@ import TopProducts from "../components/TopProducts";
 const Home = () => {
   return (
     <>
-      <main className="h-2/4 flex items-center flex-row-reverse overflow-x-hidden overflow-y-hidden justify-between p-16 relative">
+      <main className="h-2/4 max-h-[700px] flex items-center flex-row-reverse overflow-x-hidden overflow-y-hidden justify-between p-16 relative">
         <img
           src="/assets/images/BannerBurguer.png"
           className="h-[500px] -rotate-12 translate-x-32 -z-10 drop-shadow-lg"
@@ -27,7 +27,7 @@ const Home = () => {
         <div className="flex flex-col gap-6 absolute m-16">
           <h2 className="text-6xl font-bold w-3/6">
             Experimente o <br />
-            <span className="before:block before:translate-y-11 h-2 before:absolute before:-inset-1  before:bg-yellow-200 relative inline-block">
+            <span className="before:block before:translate-y-12 h-2 before:absolute before:-inset-1  before:bg-primary relative inline-block">
               <span className="relative">Melhor Artesanal </span>
             </span>{" "}
             do Rio

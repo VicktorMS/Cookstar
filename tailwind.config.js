@@ -22,7 +22,8 @@ export default {
           "primary": "#ffc101",
           "secondary": "#cfba64",
           'accent': "#cfba64",
-          'primary-content': "#fff"
+          'primary-content': "#fff",
+          'secondary-content': "#fff",
         }
       },
     ],
