@@ -13,7 +13,7 @@ const TopProducts = () => {
 
   return (
     <>
-      <h3 className="absolute relative bottom-4">Que Fazem Sucesso</h3>
+      <h3 className="absolute relative bottom-4 font-semibold">Que Fazem Sucesso</h3>
       <div className="w-full h-full px-12 flex">
         {data[0].items.map((product) => (
           <ProductCard key={product.id} data={product} />
@@ -34,9 +34,9 @@ const ProductCard = ({ data }) => {
       />
       <div className="w-full">
         <div>
-          <p className="text-md font-semibold">R${price.amount},00</p>
+          <p className="text-md font-medium">R${price.amount},00</p>
           <p className="font-bold text-xl">{name}</p>
-          <p className="text-ellipse w-64 truncate text-sm text-base-content">{ingredients.join(",")}</p>
+          <p className="text-ellipse w-52 truncate text-sm text-base-content">{ingredients.join(",")}</p>
 
           {/* Mudar cor desse botão pra secundária */}
           <button className="btn btn-outline mt-2 btn-primary rounded-full w-full btn-sm">Pedir Agora</button>
