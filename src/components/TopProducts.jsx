@@ -1,7 +1,7 @@
 import React from "react";
 import { useQuery } from "react-query";
 import { getAllBurguers } from "../service/api";
-import axios from "axios";
+import Cart from "../icons/Cart";
 
 const TopProducts = () => {
   const { error, data, isFetching } = useQuery("burguers", () =>
@@ -13,7 +13,9 @@ const TopProducts = () => {
 
   return (
     <>
-      <h3 className="absolute relative bottom-4 font-semibold">Que Fazem Sucesso</h3>
+      <h3 className="absolute relative bottom-4 font-bold drop-shadow-sm text-2xl">
+        Preferidos da Casa
+      </h3>
       <div className="w-full h-full px-12 flex">
         {data[0].items.map((product) => (
           <ProductCard key={product.id} data={product} />
@@ -26,20 +28,22 @@ const TopProducts = () => {
 const ProductCard = ({ data }) => {
   const { name, imageUrl, price, ingredients } = data;
   return (
-    <div className="p-3 grow hover:scale-110 transition-transform bg-base-100 drop-shadow-sm rounded m-4 max-h-96 flex flex-col items-center gap-2">
+    <div className="grow hover:scale-110 w-96 transition-transform bg-base-100 drop-shadow-md rounded cursor-pointer m-4 max-h-96 flex flex-col items-center gap-0">
       <img
-        className="w-72 object-cover h-56 rounded-sm"
+        className="w-full object-cover h-56 rounded-t-lg"
         src={imageUrl}
         alt={name}
       />
-      <div className="w-full">
+      <div className="w-full p-3">
         <div>
-          <p className="text-md font-medium">R${price.amount},00</p>
+          <p className="text-lg font-normal">R${price.amount},00</p>
           <p className="font-bold text-xl">{name}</p>
-          <p className="text-ellipse w-52 truncate text-sm text-base-content">{ingredients.join(",")}</p>
-
-          {/* Mudar cor desse botão pra secundária */}
-          <button className="btn btn-outline mt-2 btn-primary rounded-full w-full btn-sm">Pedir Agora</button>
+          <p className="text-clip text-overlength text-slate-600 text-sm text-base-content">
+            {ingredients.join(", ")}
+          </p>
+          <button className="btn btn-primary w-full mt-2 btn-sm">
+            Pedir Agora
+          </button>
         </div>
       </div>
     </div>

@@ -11,6 +11,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 
 import MainLayout from "./pages/layouts/MainLayout.jsx";
 import Home from "./pages/Home.jsx";
+import Menu from "./pages/Menu.jsx";
 
 const queryClient = new QueryClient()
 
@@ -23,6 +24,7 @@ const App = () => {
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
+        <Route path="cardapio" element={<Menu/>}/>
       </Route>
     )
   );

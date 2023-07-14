@@ -26,7 +26,7 @@ const Home = () => {
         />
 
         <div className="flex flex-col gap-6 absolute m-16">
-          <h2 className="text-6xl font-bold w-3/6">
+          <h2 className="text-6xl font-bold w-3/6 drop-shadow-sm">
             Experimente o <br />
             <span className="before:block before:translate-y-12 h-2 before:absolute before:-inset-1  before:bg-primary relative inline-block">
               <span className="relative">Melhor Artesanal </span>
@@ -44,7 +44,7 @@ const Home = () => {
               Ver Cardápio
             </button>
             <button className="btn rounded-none btn-outline btn-primary">
-              Primary
+              Nossa Localização
             </button>
           </div>
         </div>
@@ -53,14 +53,30 @@ const Home = () => {
         <CategoryList />
         <TopProducts />
       </section>
-      <section className="p-16 h-1/4 bg-base-100 flex items-center gap-8">
+
+     
+
+      <section className="bg-primary w-full p-6 h-1/5 flex">
+        <img
+          src="https://i.pinimg.com/originals/6c/ee/58/6cee589c2f553320ee93e5afced09766.png"
+          className="absolute relative left-0 drop-shadow-lg -translate-x-24 h-full scale-125 z-30"
+        />
+        <div className="text-primary-content w-full -translate-x-24 flex flex-col">
+          <p className="text-6xl font-bold drop-shadow-lg">
+            Cadastre-se para promoções imperdíveis
+          </p>
+          <p className="text-secondary">Tempo limitado</p>
+        </div>
+      </section>
+
+      <section className="h-1/5 bg-base-100 flex items-center gap-8">
         <img
           src="https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2022/11/23134922/Geleia-Rodizio-Divulgacao-Credito-da-foto-Victor-Rocha-5.jpeg"
           alt="Rodizio de MiniHamburgueres"
-          className="w-[45%] drop-shadow-lg rounded-sm"
+          className="w-[45%] h-full object-cover  drop-shadow-lg rounded-sm"
         />
         <div>
-          <h3 className="text-4xl font-bold">Rodizio de Artesanal</h3>
+          <h3 className="text-5xl font-bold">Rodizio de Artesanal</h3>
           <p className="text-lg mb-4">
             Rodizio de MiniBurguers, monte você mesmo seus sabores favoritos.{" "}
           </p>
@@ -70,17 +86,21 @@ const Home = () => {
             sunt enim eum ad ratione ipsam optio, atque fuga, perferendis error
             sapiente sit.
           </p>
-          <div className="flex mt-3 justify-between w-[90%]">
-            <div className="flex items-center gap-1 text-sm text-green-600">
+          <div className="flex mt-3 gap-4 w-[90%]">
+            <div className="flex items-center gap-1 text-sm text-secondary">
               <CheckIcon />
               <span className="text-slate-600">Todos os dias</span>
             </div>
-            <div className="flex items-center gap-1 text-sm text-green-600">
-              <CheckIcon  />
-              <span className="text-slate-600">Refil de batata frita, anel de cebola, refri ou chopp</span>
+            <div className="flex items-center gap-1 text-sm text-secondary">
+              <CheckIcon />
+              <span className="text-slate-600">
+                Refil de batata frita, anel de cebola, refri ou chopp
+              </span>
             </div>
           </div>
-          <button className="btn mt-6 btn-outline rounded-none btn-primary">Saber Mais</button>
+          <button className="btn mt-6 btn-outline rounded-none btn-primary">
+            Saber Mais
+          </button>
         </div>
       </section>
     </>

@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns:{
+        "menuLayout": '22% 1fr'
+      },
+      gridTemplateRows:{
+        "menuLayout": 'minmax(100px, auto)'
+      }
+    },
   },
   daisyui: {
     themes: [
@@ -13,9 +20,10 @@ export default {
         light: {
           ...require("daisyui/src/theming/themes")["[data-theme=light]"],
           "primary": "#ffc101",
-          "secondary": "#cfba64",
+          "secondary": "#806926",
           'accent': "#cfba64",
-          'primary-content': "#fff"
+          'primary-content': "#fff",
+          'secondary-content': "#fff",
         },
         dark: {
           ...require("daisyui/src/theming/themes")["[data-theme=dark]"],
