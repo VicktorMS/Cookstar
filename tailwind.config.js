@@ -19,15 +19,15 @@ export default {
       {
         light: {
           ...require("daisyui/src/theming/themes")["[data-theme=light]"],
-          "primary": "#ffc101",
-          "secondary": "#806926",
+          "primary": "#faca34",
+          "secondary": "#f97316",
           'accent': "#cfba64",
           'primary-content': "#fff",
           'secondary-content': "#fff",
         },
         dark: {
           ...require("daisyui/src/theming/themes")["[data-theme=dark]"],
-          "primary": "#ffc101",
+          "primary": "#faca34",
           "secondary": "#cfba64",
           'accent': "#cfba64",
           'primary-content': "#fff",
